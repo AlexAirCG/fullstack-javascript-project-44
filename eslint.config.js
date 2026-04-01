@@ -2,6 +2,7 @@ import js from "@eslint/js";
 import globals from "globals";
 import { defineConfig } from "eslint/config";
 import stylistic from "@stylistic/eslint-plugin";
+import eslintConfigPrettier from "eslint-config-prettier";
 
 export default defineConfig([
   stylistic.configs.recommended,
@@ -11,8 +12,11 @@ export default defineConfig([
     extends: ["js/recommended"],
     languageOptions: { globals: globals.node },
     rules: {
-      "@stylistic/quotes": ["error", "double"], // Разрешаем двойные кавычки
-      "@stylistic/semi": ["error", "always"], // Требуем точки с запятой
+      // Настраиваем именно стилистическое правило плагина
+      "@stylistic/quotes": ["error", "double", { allowTemplateLiterals: true }],
+      "@stylistic/semi": ["error", "always"],
+      // Обычное правило quotes можно убрать, чтобы не было конфликтов
     },
   },
+  eslintConfigPrettier,
 ]);
