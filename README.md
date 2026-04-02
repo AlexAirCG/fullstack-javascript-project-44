@@ -25,3 +25,7 @@ https://asciinema.org/a/qpTyK3COlvAq5X60
 ### game demo brain-calc
 
 https://asciinema.org/a/rFdqvPVt6Wpipg2M
+
+### game demo brain-gcd
+
+https://asciinema.org/a/DXLkbedy9kImXzx5
