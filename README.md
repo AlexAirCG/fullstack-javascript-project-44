@@ -18,6 +18,10 @@ Boilerplate for javascript projects with:
 - Javascript (nodejs)
 - Eslint
 
-### game demo
+### game demo brain-even
 
 https://asciinema.org/a/qpTyK3COlvAq5X60
+
+### game demo brain-calc
+
+https://asciinema.org/a/rFdqvPVt6Wpipg2M
