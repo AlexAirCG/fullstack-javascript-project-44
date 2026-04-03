@@ -1,7 +1,7 @@
 import crypto from 'crypto'
 import runGame from '../index.js'
 
-const description = `Answer "yes" if given number is prime. Otherwise answer "no".`
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 const getRoundData = () => {
   const number = crypto.randomInt(1, 101)

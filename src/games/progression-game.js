@@ -16,7 +16,8 @@ const getRoundData = () => {
     if (i === hiddenNum) {
       strProgress += '.. '
       correctAnswer = String(currentNum)
-    } else {
+    }
+    else {
       strProgress += currentNum + ' '
     }
   }
