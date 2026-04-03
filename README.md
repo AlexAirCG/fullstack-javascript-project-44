@@ -5,19 +5,6 @@
 
 # Приложение brain-games
 
-## Setup
-
-```bash
-make install
-```
-
-## Description
-
-Boilerplate for javascript projects with:
-
-- Javascript (nodejs)
-- Eslint
-
 ### game demo brain-even
 
 https://asciinema.org/a/qpTyK3COlvAq5X60
@@ -33,3 +20,7 @@ https://asciinema.org/a/DXLkbedy9kImXzx5
 ### game demo brain-progression
 
 https://asciinema.org/a/1uGb0Kb2LAANykx5
+
+### game demo brain-prime
+
+https://asciinema.org/a/JerqIKcvyTtSZFVa
