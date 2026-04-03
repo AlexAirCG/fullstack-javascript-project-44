@@ -17,6 +17,7 @@ export default [
       // Явно заставляем плагин принимать двойные кавычки и точки с запятой
       '@stylistic/quotes': ['error', 'double', { allowTemplateLiterals: true }],
       '@stylistic/semi': ['error', 'always'],
+      '@stylistic/brace-style': ['error', '1tbs', { allowSingleLine: true }],
     },
   },
   // Prettier всегда должен быть последним, чтобы отключить конфликтующие правила
