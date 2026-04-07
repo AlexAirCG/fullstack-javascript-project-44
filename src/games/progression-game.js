@@ -1,13 +1,13 @@
-import crypto from 'crypto'
+import getRandomNumer from '../utils/random.js'
 import runGame from '../index.js'
 
 const description = 'What number is missing in the progression?'
 
 const getRoundData = () => {
-  const progressionLigth = crypto.randomInt(5, 11)
-  const firstNumOfProgress = crypto.randomInt(1, 50)
-  const stepOfProgress = crypto.randomInt(1, 6)
-  const hiddenNum = crypto.randomInt(0, progressionLigth)
+  const progressionLigth = getRandomNumer(5, 10)
+  const firstNumOfProgress = getRandomNumer(1, 50)
+  const stepOfProgress = getRandomNumer(1, 6)
+  const hiddenNum = getRandomNumer(0, progressionLigth - 1)
 
   let strProgress = ''
   let correctAnswer
