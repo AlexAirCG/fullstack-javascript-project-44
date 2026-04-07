@@ -1,15 +1,15 @@
-import crypto from 'crypto'
+import getRandomNumer from '../utils/random.js'
 import runGame from '../index.js'
 
 const description = 'What is the result of the expression?'
 
 const getRoundData = () => {
   const operators = ['+', '-', '*']
-  const randomIndex = crypto.randomInt(0, operators.length)
+  const randomIndex = getRandomNumer(0, operators.length - 1)
   const operatorRondom = operators[randomIndex]
 
-  const firstRondomNumber = Number(crypto.randomInt(1, 101))
-  const secondRondomNumber = Number(crypto.randomInt(1, 101))
+  const firstRondomNumber = getRandomNumer(0, 100)
+  const secondRondomNumber = getRandomNumer(0, 100)
 
   const question = `${firstRondomNumber} ${operatorRondom} ${secondRondomNumber}`
 
