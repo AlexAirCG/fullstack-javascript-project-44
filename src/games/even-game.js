@@ -1,10 +1,10 @@
-import crypto from 'crypto'
+import getRandomNumer from '../utils/random.js'
 import runGame from '../index.js'
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 const getRoundData = () => {
-  const randomNumber = crypto.randomInt(1, 101)
+  const randomNumber = getRandomNumer(1, 101)
   const question = String(randomNumber)
   const correctAnswer = randomNumber % 2 === 0 ? 'yes' : 'no'
 
